@@ -3,9 +3,9 @@
     public interface ICurrency
     {
         string Name { get; }
-        void AddValues(float grade);
-        void AddValues(int grade);
-        void AddValues(string grade);
+        void AddValues(float values);
+        void AddValues(int values);
+        void AddValues(string values);
         Statistics GetStatistics();
     }
 }

@@ -22,12 +22,12 @@
             this.Min = float.MaxValue;
         }
 
-        public void AddValues(float grade)
+        public void AddValues(float values)
         {
             this.Count++;
-            this.Sum += grade;
-            this.Min = Math.Min(this.Min, grade);
-            this.Max = Math.Max(this.Max, grade);
+            this.Sum += values;
+            this.Min = Math.Min(this.Min, values);
+            this.Max = Math.Max(this.Max, values);
         }
     }
 }
