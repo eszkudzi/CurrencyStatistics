@@ -2,7 +2,7 @@
 
 namespace CurrencyStatistics
 {
-    internal class CurrencyInMemory : CurrencyBase
+    public class CurrencyInMemory : CurrencyBase
     {
         private List<float> values = new List<float>();
         public CurrencyInMemory(string name) : base(name)

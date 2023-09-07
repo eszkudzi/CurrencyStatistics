@@ -63,5 +63,10 @@ namespace CurrencyStatistics
             }
             return values;
         }
+
+        public void RemoveDataFromFile()
+        {
+            File.WriteAllText(fileName, "");
+        }
     }
 }
