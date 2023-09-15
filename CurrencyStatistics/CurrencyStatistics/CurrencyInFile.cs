@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace CurrencyStatistics
+﻿namespace CurrencyStatistics
 {
     public class CurrencyInFile : CurrencyBase
     {
@@ -14,24 +12,6 @@ namespace CurrencyStatistics
             using (var writer = File.AppendText(fileName))
             {
                 writer.WriteLine(values);
-            }
-        }
-
-        public override void AddValues(int values)
-        {
-            float result = (float)values;
-            this.AddValues(result);
-        }
-
-        public override void AddValues(string values)
-        {
-            if (float.TryParse(values, out float result))
-            {
-                this.AddValues(result);
-            }
-            else
-            {
-                throw new Exception("Invalid string value.");
             }
         }
 

@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace CurrencyStatistics
+﻿namespace CurrencyStatistics
 {
     public class CurrencyInMemory : CurrencyBase
     {
@@ -14,23 +12,6 @@ namespace CurrencyStatistics
             this.values.Add(values);
         }
 
-        public override void AddValues(int values)
-        {
-            float result = (float)values;
-            this.AddValues(result);
-        }
-
-        public override void AddValues(string values)
-        {
-            if (float.TryParse(values, out float result))
-            {
-                this.AddValues(result);
-            }
-            else
-            {
-                throw new Exception("Invalid string value.");
-            }
-        }
 
         public override Statistics GetStatistics()
         {

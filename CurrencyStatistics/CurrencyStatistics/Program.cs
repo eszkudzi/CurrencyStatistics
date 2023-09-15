@@ -1,6 +1,4 @@
-﻿using System;
-using CurrencyStatistics;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using CurrencyStatistics;
 
 Console.WriteLine("Hello to the Currency Statistics console app.");
 Console.WriteLine("---------------------------------------");
